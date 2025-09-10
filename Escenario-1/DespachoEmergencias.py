@@ -20,7 +20,6 @@ class EmergencyCall:
         self.dispatch_time = None
 
     def __lt__(self, other):
-        # Priority comparison for heap (lower priority number = higher priority)
         if self.prioridad != other.prioridad:
             return self.prioridad < other.prioridad
         elif self.timestamp != other.timestamp:
@@ -41,7 +40,6 @@ class EmergencyCall:
                 'recurso_estimado': subtask['recurso_estimado'],
                 'path': current_path
             })
-            # Recursively process nested subtasks
             flattened.extend(self.flatten_subtasks(subtask.get('subtareas', []), current_path))
         return flattened
 
@@ -82,7 +80,6 @@ class EmergencyDispatchSystem:
         call.dispatch_time = datetime.now()
         self.dispatched_calls.append(call)
 
-        # Log the dispatch decision
         log_entry = {
             'id': call.id,
             'prioridad': call.prioridad,
@@ -114,14 +111,11 @@ class EmergencyDispatchSystem:
             print("No calls have been dispatched yet")
             return [], 0
 
-        # Copy the list to avoid modifying the original
         calls_to_sort = self.dispatched_calls.copy()
 
-        # Measure sorting performance
         start_time = time.time()
 
         if sort_algorithm == 'quicksort':
-            # Increase recursion limit for large datasets
             original_recursion_limit = sys.getrecursionlimit()
             if len(calls_to_sort) > 1000:
                 sys.setrecursionlimit(10000)
@@ -134,7 +128,6 @@ class EmergencyDispatchSystem:
         elif sort_algorithm == 'mergesort':
             sorted_calls = self.mergesort(calls_to_sort)
         elif sort_algorithm == 'timsort':
-            # Use Python's built-in sorted with our custom key
             sorted_calls = sorted(calls_to_sort, key=self._call_sort_key)
         else:
             raise ValueError("Unsupported sorting algorithm")
@@ -142,7 +135,6 @@ class EmergencyDispatchSystem:
         end_time = time.time()
         sort_time = end_time - start_time
 
-        # Generate report data
         report = []
         for call in sorted_calls:
             flattened_subtasks = call.flatten_subtasks()
@@ -185,7 +177,6 @@ class EmergencyDispatchSystem:
             if low < high:
                 pivot_index = self._partition(arr_copy, low, high)
 
-                # Push left and right subarrays to stack
                 if pivot_index - 1 > low:
                     stack.append((low, pivot_index - 1))
                 if pivot_index + 1 < high:
@@ -236,19 +227,15 @@ class EmergencyDispatchSystem:
 
     def _call_compare(self, call1: EmergencyCall, call2: EmergencyCall) -> int:
         """Compare two calls for sorting (by estimated response time, then priority, then timestamp, then ID)"""
-        # Compare tiempo_estimado_respuesta
         if call1.tiempo_estimado_respuesta != call2.tiempo_estimado_respuesta:
             return call1.tiempo_estimado_respuesta - call2.tiempo_estimado_respuesta
 
-        # Compare prioridad
         if call1.prioridad != call2.prioridad:
             return call1.prioridad - call2.prioridad
 
-        # Compare timestamp
         if call1.timestamp != call2.timestamp:
             return -1 if call1.timestamp < call2.timestamp else 1
 
-        # Compare ID as last resort
         return -1 if call1.id < call2.id else 1
 
     def save_report_to_json(self, report: List[Dict[str, Any]], filename: str):
@@ -276,38 +263,30 @@ class EmergencyDispatchSystem:
 
 def main():
     """Main function to run the emergency dispatch system"""
-    # Initialize the system
     system = EmergencyDispatchSystem()
 
-    # Load emergency calls
     system.load_calls_from_json('calls.json')
 
-    # Process all calls
     system.process_all_calls()
 
-    # Generate reports with different sorting algorithms
     print("\nGenerating reports...")
 
     try:
-        # QuickSort report (iterative version)
         quicksort_report, quicksort_time = system.generate_report('quicksort')
         system.save_report_to_json(quicksort_report, 'emergency_report_quicksort.json')
     except Exception as e:
         print(f"Error with QuickSort: {e}")
 
     try:
-        # MergeSort report
         mergesort_report, mergesort_time = system.generate_report('mergesort')
         system.save_report_to_json(mergesort_report, 'emergency_report_mergesort.json')
     except Exception as e:
         print(f"Error with MergeSort: {e}")
 
     try:
-        # TimSort (Python's built-in) report
         timsort_report, timsort_time = system.generate_report('timsort')
         system.save_report_to_json(timsort_report, 'emergency_report_timsort.json')
 
-        # Print performance comparison
         print(f"\nSorting Performance Comparison:")
         print(f"QuickSort (iterative): {quicksort_time:.6f} seconds")
         print(f"MergeSort: {mergesort_time:.6f} seconds")
@@ -316,10 +295,8 @@ def main():
     except Exception as e:
         print(f"Error with TimSort: {e}")
 
-    # Print dispatch log
     system.print_log()
 
-    # Complexity analysis
     print("\n" + "=" * 100)
     print("COMPLEXITY ANALYSIS")
     print("=" * 100)
