@@ -89,12 +89,10 @@ class SistemaBiblioteca:
             libro = self.catalogo.get(solicitud.libro_id)
 
             if libro and libro.ejemplares_disponibles > 0:
-                # Hay ejemplares disponibles
                 libro.ejemplares_disponibles -= 1
                 solicitud.resultado = "éxito"
                 exitosas += 1
             else:
-                # No hay ejemplares disponibles
                 solicitud.resultado = "sin_ejemplares"
 
             solicitud.procesada = True
@@ -107,7 +105,6 @@ class SistemaBiblioteca:
         print(f"Procesamiento completado: {procesadas} solicitudes, {exitosas} exitosas")
 
     def obtener_recomendaciones(self, libro_id: str, profundidad_maxima: int = 3) -> List[str]:
-        """Obtener recomendaciones recursivas para un libro"""
         if libro_id not in self.catalogo:
             return []
 
@@ -117,7 +114,6 @@ class SistemaBiblioteca:
 
     def _buscar_recomendaciones_recursivo(self, libro_id: str, recomendaciones: Set[str],
                                           profundidad_maxima: int, profundidad_actual: int):
-        """Función recursiva auxiliar para buscar recomendaciones"""
         if profundidad_actual >= profundidad_maxima or libro_id not in self.catalogo:
             return
 
@@ -131,7 +127,6 @@ class SistemaBiblioteca:
                 )
 
     def ordenar_catalogo(self, criterio: str = 'titulo', algoritmo: str = 'quicksort'):
-        """Ordenar el catálogo por el criterio y algoritmo especificados"""
         libros = list(self.catalogo.values())
 
         start_time = time.time()
@@ -152,7 +147,6 @@ class SistemaBiblioteca:
         return libros_ordenados, tiempo_ordenamiento
 
     def quicksort_iterativo(self, arr: List[Any], criterio: str) -> List[Any]:
-        """QuickSort iterativo para evitar límites de recursión"""
         if len(arr) <= 1:
             return arr
 
@@ -173,7 +167,6 @@ class SistemaBiblioteca:
         return arr_copy
 
     def _partition(self, arr: List[Any], low: int, high: int, criterio: str) -> int:
-        """Función de partición para QuickSort"""
         pivot = arr[high]
         i = low - 1
 
@@ -186,7 +179,6 @@ class SistemaBiblioteca:
         return i + 1
 
     def mergesort(self, arr: List[Any], criterio: str) -> List[Any]:
-        """MergeSort para ordenamiento estable"""
         if len(arr) <= 1:
             return arr
 
@@ -197,7 +189,6 @@ class SistemaBiblioteca:
         return self._merge(left, right, criterio)
 
     def _merge(self, left: List[Any], right: List[Any], criterio: str) -> List[Any]:
-        """Función de mezcla para MergeSort"""
         result = []
         i = j = 0
 
@@ -214,24 +205,20 @@ class SistemaBiblioteca:
         return result
 
     def _comparar_libros(self, libro1: Libro, libro2: Libro, criterio: str) -> int:
-        """Comparar dos libros según el criterio especificado"""
         if criterio == 'titulo':
             if libro1.titulo != libro2.titulo:
                 return -1 if libro1.titulo < libro2.titulo else 1
-            # Desempate por año si los títulos son iguales
             return libro1.anio - libro2.anio
 
         elif criterio == 'anio':
             if libro1.anio != libro2.anio:
                 return libro1.anio - libro2.anio
-            # Desempate por título si los años son iguales
             return -1 if libro1.titulo < libro2.titulo else 1
 
         else:
             raise ValueError("Criterio de ordenamiento no válido")
 
     def generar_reporte_solicitudes(self) -> List[Dict[str, Any]]:
-        """Generar reporte de solicitudes procesadas"""
         reporte = []
         for solicitud in self.solicitudes_procesadas:
             reporte.append({
@@ -246,7 +233,6 @@ class SistemaBiblioteca:
         return reporte
 
     def generar_reporte_recomendaciones(self, libro_id: str, profundidad: int = 2) -> Dict[str, Any]:
-        """Generar reporte de recomendaciones para un libro"""
         if libro_id not in self.catalogo:
             return {'error': 'Libro no encontrado'}
 
@@ -267,7 +253,6 @@ class SistemaBiblioteca:
         }
 
     def generar_reporte_catalogo_ordenado(self, max_libros: int = 50) -> List[Dict[str, Any]]:
-        """Generar reporte del catálogo ordenado"""
         if not self.libros_ordenados:
             self.ordenar_catalogo('titulo', 'quicksort')
 
@@ -281,16 +266,12 @@ class SistemaBiblioteca:
         ]
 
     def guardar_reportes(self, prefijo_archivo: str = "reporte"):
-        """Guardar todos los reportes en archivos JSON"""
-        # Reporte de solicitudes
         with open(f"{prefijo_archivo}_solicitudes.json", 'w', encoding='utf-8') as f:
             json.dump(self.generar_reporte_solicitudes(), f, indent=2, ensure_ascii=False)
 
-        # Reporte de catálogo ordenado
         with open(f"{prefijo_archivo}_catalogo.json", 'w', encoding='utf-8') as f:
             json.dump(self.generar_reporte_catalogo_ordenado(), f, indent=2, ensure_ascii=False)
 
-        # Reporte de recomendaciones (para el primer libro del catálogo como ejemplo)
         if self.catalogo:
             primer_libro_id = next(iter(self.catalogo.keys()))
             with open(f"{prefijo_archivo}_recomendaciones.json", 'w', encoding='utf-8') as f:
@@ -299,28 +280,20 @@ class SistemaBiblioteca:
         print(f"Reportes guardados con prefijo: {prefijo_archivo}")
 
 
-# Función principal
 def main():
-    """Función principal para ejecutar el sistema de biblioteca"""
     sistema = SistemaBiblioteca()
 
-    # Cargar datos
     sistema.cargar_catalogo('catalogo.json')
     sistema.cargar_solicitudes('solicitudes.json')
 
-    # Procesar solicitudes
     sistema.procesar_solicitudes()
 
-    # Ordenar catálogo con diferentes algoritmos y comparar
     print("\nComparando algoritmos de ordenamiento:")
 
-    # QuickSort por título
     libros_quicksort, tiempo_quicksort = sistema.ordenar_catalogo('titulo', 'quicksort')
 
-    # MergeSort por título
     libros_mergesort, tiempo_mergesort = sistema.ordenar_catalogo('titulo', 'mergesort')
 
-    # QuickSort por año
     libros_quicksort_anio, tiempo_quicksort_anio = sistema.ordenar_catalogo('anio', 'quicksort')
 
     print(f"\nResultados de ordenamiento:")
@@ -328,17 +301,14 @@ def main():
     print(f"MergeSort (título): {tiempo_mergesort:.4f} segundos")
     print(f"QuickSort (año): {tiempo_quicksort_anio:.4f} segundos")
 
-    # Generar recomendaciones para algunos libros
     if sistema.catalogo:
         ejemplo_libro_id = next(iter(sistema.catalogo.keys()))
         recomendaciones = sistema.generar_reporte_recomendaciones(ejemplo_libro_id)
         print(f"\nRecomendaciones para '{sistema.catalogo[ejemplo_libro_id].titulo}':")
         print(f"Encontradas {recomendaciones['total_recomendaciones']} recomendaciones")
 
-    # Guardar reportes
     sistema.guardar_reportes()
 
-    # Análisis de complejidad
     print("\n" + "=" * 60)
     print("ANÁLISIS DE COMPLEJIDAD")
     print("=" * 60)
