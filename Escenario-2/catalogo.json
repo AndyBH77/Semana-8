@@ -194,6 +194,461 @@
         "autor": "Jorge Luis Borges",
         "paginas": 160
       }
+    },
+    {
+      "id": "BK1015",
+      "titulo": "La casa de los espíritus",
+      "anio": 1982,
+      "popularidad": 88.4,
+      "recomendaciones": ["BK1000", "BK1007"],
+      "ejemplares_disponibles": 3,
+      "metadatos": {
+        "genero": "Realismo mágico",
+        "autor": "Isabel Allende",
+        "paginas": 448
+      }
+    },
+    {
+      "id": "BK1016",
+      "titulo": "El beso de la mujer araña",
+      "anio": 1976,
+      "popularidad": 82.7,
+      "recomendaciones": ["BK1005", "BK1011"],
+      "ejemplares_disponibles": 2,
+      "metadatos": {
+        "genero": "Novela",
+        "autor": "Manuel Puig",
+        "paginas": 288
+      }
+    },
+    {
+      "id": "BK1017",
+      "titulo": "La ciudad de las bestias",
+      "anio": 2002,
+      "popularidad": 79.3,
+      "recomendaciones": ["BK1015"],
+      "ejemplares_disponibles": 4,
+      "metadatos": {
+        "genero": "Aventura",
+        "autor": "Isabel Allende",
+        "paginas": 304
+      }
+    },
+    {
+      "id": "BK1018",
+      "titulo": "Memoria de mis putas tristes",
+      "anio": 2004,
+      "popularidad": 77.8,
+      "recomendaciones": ["BK1000", "BK1007", "BK1013"],
+      "ejemplares_disponibles": 2,
+      "metadatos": {
+        "genero": "Novela",
+        "autor": "Gabriel García Márquez",
+        "paginas": 112
+      }
+    },
+    {
+      "id": "BK1019",
+      "titulo": "La muerte de Artemio Cruz",
+      "anio": 1962,
+      "popularidad": 84.6,
+      "recomendaciones": ["BK1002", "BK1006"],
+      "ejemplares_disponibles": 1,
+      "metadatos": {
+        "genero": "Novela",
+        "autor": "Carlos Fuentes",
+        "paginas": 336
+      }
+    },
+    {
+      "id": "BK1020",
+      "titulo": "La guerra del fin del mundo",
+      "anio": 1981,
+      "popularidad": 86.2,
+      "recomendaciones": ["BK1002", "BK1019"],
+      "ejemplares_disponibles": 3,
+      "metadatos": {
+        "genero": "Novela histórica",
+        "autor": "Mario Vargas Llosa",
+        "paginas": 576
+      }
+    },
+    {
+      "id": "BK1021",
+      "titulo": "Los detectives salvajes",
+      "anio": 1998,
+      "popularidad": 90.1,
+      "recomendaciones": ["BK1001", "BK1004"],
+      "ejemplares_disponibles": 2,
+      "metadatos": {
+        "genero": "Novela",
+        "autor": "Roberto Bolaño",
+        "paginas": 688
+      }
+    },
+    {
+      "id": "BK1022",
+      "titulo": "2666",
+      "anio": 2004,
+      "popularidad": 92.5,
+      "recomendaciones": ["BK1021"],
+      "ejemplares_disponibles": 1,
+      "metadatos": {
+        "genero": "Novela",
+        "autor": "Roberto Bolaño",
+        "paginas": 1136
+      }
+    },
+    {
+      "id": "BK1023",
+      "titulo": "La saga/fuga de J.B.",
+      "anio": 1972,
+      "popularidad": 80.7,
+      "recomendaciones": ["BK1001", "BK1022"],
+      "ejemplares_disponibles": 2,
+      "metadatos": {
+        "genero": "Novela experimental",
+        "autor": "Gonzalo Torrente Ballester",
+        "paginas": 624
+      }
+    },
+    {
+      "id": "BK1024",
+      "titulo": "Aura",
+      "anio": 1962,
+      "popularidad": 83.9,
+      "recomendaciones": ["BK1003", "BK1019"],
+      "ejemplares_disponibles": 5,
+      "metadatos": {
+        "genero": "Novela corta",
+        "autor": "Carlos Fuentes",
+        "paginas": 80
+      }
+    },
+    {
+      "id": "BK1025",
+      "titulo": "Paula",
+      "anio": 1994,
+      "popularidad": 85.7,
+      "recomendaciones": ["BK1015", "BK1017"],
+      "ejemplares_disponibles": 3,
+      "metadatos": {
+        "genero": "Memoria",
+        "autor": "Isabel Allende",
+        "paginas": 384
+      }
+    },
+    {
+      "id": "BK1026",
+      "titulo": "El obsceno pájaro de la noche",
+      "anio": 1970,
+      "popularidad": 78.3,
+      "recomendaciones": ["BK1022", "BK1024"],
+      "ejemplares_disponibles": 2,
+      "metadatos": {
+        "genero": "Novela",
+        "autor": "José Donoso",
+        "paginas": 552
+      }
+    },
+    {
+      "id": "BK1027",
+      "titulo": "Conversación en La Catedral",
+      "anio": 1969,
+      "popularidad": 84.1,
+      "recomendaciones": ["BK1002", "BK1020"],
+      "ejemplares_disponibles": 1,
+      "metadatos": {
+        "genero": "Novela",
+        "autor": "Mario Vargas Llosa",
+        "paginas": 608
+      }
+    },
+    {
+      "id": "BK1028",
+      "titulo": "Mala onda",
+      "anio": 1991,
+      "popularidad": 77.5,
+      "recomendaciones": ["BK1026"],
+      "ejemplares_disponibles": 3,
+      "metadatos": {
+        "genero": "Novela",
+        "autor": "Alberto Fuguet",
+        "paginas": 264
+      }
+    },
+    {
+      "id": "BK1029",
+      "titulo": "Terra Nostra",
+      "anio": 1975,
+      "popularidad": 81.2,
+      "recomendaciones": ["BK1019", "BK1024"],
+      "ejemplares_disponibles": 2,
+      "metadatos": {
+        "genero": "Novela histórica",
+        "autor": "Carlos Fuentes",
+        "paginas": 816
+      }
+    },
+    {
+      "id": "BK1030",
+      "titulo": "Estrella distante",
+      "anio": 1996,
+      "popularidad": 82.6,
+      "recomendaciones": ["BK1021", "BK1022"],
+      "ejemplares_disponibles": 4,
+      "metadatos": {
+        "genero": "Novela",
+        "autor": "Roberto Bolaño",
+        "paginas": 176
+      }
+    },
+    {
+      "id": "BK1031",
+      "titulo": "El reino de este mundo",
+      "anio": 1949,
+      "popularidad": 83.4,
+      "recomendaciones": ["BK1000", "BK1003"],
+      "ejemplares_disponibles": 3,
+      "metadatos": {
+        "genero": "Realismo mágico",
+        "autor": "Alejo Carpentier",
+        "paginas": 160
+      }
+    },
+    {
+      "id": "BK1032",
+      "titulo": "Nada",
+      "anio": 1945,
+      "popularidad": 76.9,
+      "recomendaciones": ["BK1005"],
+      "ejemplares_disponibles": 2,
+      "metadatos": {
+        "genero": "Novela",
+        "autor": "Carmen Laforet",
+        "paginas": 224
+      }
+    },
+    {
+      "id": "BK1033",
+      "titulo": "El luto humano",
+      "anio": 1943,
+      "popularidad": 75.8,
+      "recomendaciones": ["BK1003", "BK1031"],
+      "ejemplares_disponibles": 1,
+      "metadatos": {
+        "genero": "Novela",
+        "autor": "José Revueltas",
+        "paginas": 192
+      }
+    },
+    {
+      "id": "BK1034",
+      "titulo": "El otoño del patriarca",
+      "anio": 1975,
+      "popularidad": 87.1,
+      "recomendaciones": ["BK1000", "BK1007", "BK1013"],
+      "ejemplares_disponibles": 2,
+      "metadatos": {
+        "genero": "Novela",
+        "autor": "Gabriel García Márquez",
+        "paginas": 352
+      }
+    },
+    {
+      "id": "BK1035",
+      "titulo": "Historias de cronopios y de famas",
+      "anio": 1962,
+      "popularidad": 84.9,
+      "recomendaciones": ["BK1001", "BK1004"],
+      "ejemplares_disponibles": 3,
+      "metadatos": {
+        "genero": "Cuentos",
+        "autor": "Julio Cortázar",
+        "paginas": 176
+      }
+    },
+    {
+      "id": "BK1036",
+      "titulo": "Ojos de perro azul",
+      "anio": 1974,
+      "popularidad": 79.7,
+      "recomendaciones": ["BK1000", "BK1013", "BK1034"],
+      "ejemplares_disponibles": 2,
+      "metadatos": {
+        "genero": "Cuentos",
+        "autor": "Gabriel García Márquez",
+        "paginas": 184
+      }
+    },
+    {
+      "id": "BK1037",
+      "titulo": "Bestiario",
+      "anio": 1951,
+      "popularidad": 81.5,
+      "recomendaciones": ["BK1001", "BK1035"],
+      "ejemplares_disponibles": 4,
+      "metadatos": {
+        "genero": "Cuentos",
+        "autor": "Julio Cortázar",
+        "paginas": 192
+      }
+    },
+    {
+      "id": "BK1038",
+      "titulo": "Las armas secretas",
+      "anio": 1959,
+      "popularidad": 82.3,
+      "recomendaciones": ["BK1001", "BK1035", "BK1037"],
+      "ejemplares_disponibles": 3,
+      "metadatos": {
+        "genero": "Cuentos",
+        "autor": "Julio Cortázar",
+        "paginas": 176
+      }
+    },
+    {
+      "id": "BK1039",
+      "titulo": "La invención de Morel",
+      "anio": 1940,
+      "popularidad": 85.8,
+      "recomendaciones": ["BK1004", "BK1009"],
+      "ejemplares_disponibles": 2,
+      "metadatos": {
+        "genero": "Novela fantástica",
+        "autor": "Adolfo Bioy Casares",
+        "paginas": 128
+      }
+    },
+    {
+      "id": "BK1040",
+      "titulo": "El año de la muerte de Ricardo Reis",
+      "anio": 1984,
+      "popularidad": 86.9,
+      "recomendaciones": ["BK1004", "BK1009"],
+      "ejemplares_disponibles": 1,
+      "metadatos": {
+        "genero": "Novela",
+        "autor": "José Saramago",
+        "paginas": 384
+      }
+    },
+    {
+      "id": "BK1041",
+      "titulo": "El olvido que seremos",
+      "anio": 2006,
+      "popularidad": 88.7,
+      "recomendaciones": ["BK1000", "BK1013"],
+      "ejemplares_disponibles": 3,
+      "metadatos": {
+        "genero": "Memoria",
+        "autor": "Héctor Abad Faciolince",
+        "paginas": 320
+      }
+    },
+    {
+      "id": "BK1042",
+      "titulo": "Abril rojo",
+      "anio": 2006,
+      "popularidad": 83.2,
+      "recomendaciones": ["BK1030"],
+      "ejemplares_disponibles": 2,
+      "metadatos": {
+        "genero": "Novela negra",
+        "autor": "Santiago Roncagliolo",
+        "paginas": 288
+      }
+    },
+    {
+      "id": "BK1043",
+      "titulo": "Delirio",
+      "anio": 2004,
+      "popularidad": 80.5,
+      "recomendaciones": ["BK1041"],
+      "ejemplares_disponibles": 3,
+      "metadatos": {
+        "genero": "Novela",
+        "autor": "Laura Restrepo",
+        "paginas": 344
+      }
+    },
+    {
+      "id": "BK1044",
+      "titulo": "El ruido de las cosas al caer",
+      "anio": 2011,
+      "popularidad": 87.6,
+      "recomendaciones": ["BK1041", "BK1043"],
+      "ejemplares_disponibles": 2,
+      "metadatos": {
+        "genero": "Novela",
+        "autor": "Juan Gabriel Vásquez",
+        "paginas": 304
+      }
+    },
+    {
+      "id": "BK1045",
+      "titulo": "La tejedora de coronas",
+      "anio": 1982,
+      "popularidad": 79.8,
+      "recomendaciones": ["BK1031"],
+      "ejemplares_disponibles": 1,
+      "metadatos": {
+        "genero": "Novela histórica",
+        "autor": "Germán Espinosa",
+        "paginas": 552
+      }
+    },
+    {
+      "id": "BK1046",
+      "titulo": "El general en su laberinto",
+      "anio": 1989,
+      "popularidad": 85.1,
+      "recomendaciones": ["BK1000", "BK1007", "BK1034"],
+      "ejemplares_disponibles": 4,
+      "metadatos": {
+        "genero": "Novela histórica",
+        "autor": "Gabriel García Márquez",
+        "paginas": 288
+      }
+    },
+    {
+      "id": "BK1047",
+      "titulo": "El libro de Manuel",
+      "anio": 1973,
+      "popularidad": 78.4,
+      "recomendaciones": ["BK1001", "BK1035", "BK1038"],
+      "ejemplares_disponibles": 2,
+      "metadatos": {
+        "genero": "Novela",
+        "autor": "Julio Cortázar",
+        "paginas": 416
+      }
+    },
+    {
+      "id": "BK1048",
+      "titulo": "La fiesta del chivo",
+      "anio": 2000,
+      "popularidad": 89.3,
+      "recomendaciones": ["BK1002", "BK1020", "BK1027"],
+      "ejemplares_disponibles": 3,
+      "metadatos": {
+        "genero": "Novela histórica",
+        "autor": "Mario Vargas Llosa",
+        "paginas": 496
+      }
+    },
+    {
+      "id": "BK1049",
+      "titulo": "El infierno",
+      "anio": 1988,
+      "popularidad": 76.2,
+      "recomendaciones": ["BK1026", "BK1028"],
+      "ejemplares_disponibles": 2,
+      "metadatos": {
+        "genero": "Novela",
+        "autor": "Carmen Laforet",
+        "paginas": 240
+      }
     }
   ]
 }
