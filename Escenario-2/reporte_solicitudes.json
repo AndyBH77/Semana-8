@@ -1,0 +1,182 @@
+[
+  {
+    "id_solicitud": "sol-001",
+    "prioridad": 1,
+    "timestamp": "2024-01-15T08:30:00+00:00",
+    "libro_id": "BK1000",
+    "resultado": "éxito",
+    "usuario_id": "USR101",
+    "tipo": "prestamo"
+  },
+  {
+    "id_solicitud": "sol-003",
+    "prioridad": 1,
+    "timestamp": "2024-01-15T10:00:00+00:00",
+    "libro_id": "BK1007",
+    "resultado": "sin_ejemplares",
+    "usuario_id": "USR103",
+    "tipo": "reserva"
+  },
+  {
+    "id_solicitud": "sol-005",
+    "prioridad": 1,
+    "timestamp": "2024-01-15T11:30:00+00:00",
+    "libro_id": "BK1003",
+    "resultado": "éxito",
+    "usuario_id": "USR105",
+    "tipo": "prestamo"
+  },
+  {
+    "id_solicitud": "sol-012",
+    "prioridad": 1,
+    "timestamp": "2024-01-15T16:45:00+00:00",
+    "libro_id": "BK1009",
+    "resultado": "éxito",
+    "usuario_id": "USR112",
+    "tipo": "prestamo"
+  },
+  {
+    "id_solicitud": "sol-016",
+    "prioridad": 1,
+    "timestamp": "2024-01-15T19:45:00+00:00",
+    "libro_id": "BK1013",
+    "resultado": "éxito",
+    "usuario_id": "USR116",
+    "tipo": "prestamo"
+  },
+  {
+    "id_solicitud": "sol-020",
+    "prioridad": 1,
+    "timestamp": "2024-01-15T22:45:00+00:00",
+    "libro_id": "BK1003",
+    "resultado": "sin_ejemplares",
+    "usuario_id": "USR120",
+    "tipo": "lectura_sala"
+  },
+  {
+    "id_solicitud": "sol-002",
+    "prioridad": 2,
+    "timestamp": "2024-01-15T09:15:00+00:00",
+    "libro_id": "BK1000",
+    "resultado": "éxito",
+    "usuario_id": "USR102",
+    "tipo": "prestamo"
+  },
+  {
+    "id_solicitud": "sol-007",
+    "prioridad": 2,
+    "timestamp": "2024-01-15T13:00:00+00:00",
+    "libro_id": "BK1004",
+    "resultado": "éxito",
+    "usuario_id": "USR107",
+    "tipo": "lectura_sala"
+  },
+  {
+    "id_solicitud": "sol-010",
+    "prioridad": 2,
+    "timestamp": "2024-01-15T15:15:00+00:00",
+    "libro_id": "BK1006",
+    "resultado": "éxito",
+    "usuario_id": "USR110",
+    "tipo": "prestamo"
+  },
+  {
+    "id_solicitud": "sol-014",
+    "prioridad": 2,
+    "timestamp": "2024-01-15T18:15:00+00:00",
+    "libro_id": "BK1011",
+    "resultado": "éxito",
+    "usuario_id": "USR114",
+    "tipo": "prestamo"
+  },
+  {
+    "id_solicitud": "sol-019",
+    "prioridad": 2,
+    "timestamp": "2024-01-15T22:00:00+00:00",
+    "libro_id": "BK1001",
+    "resultado": "éxito",
+    "usuario_id": "USR119",
+    "tipo": "prestamo"
+  },
+  {
+    "id_solicitud": "sol-004",
+    "prioridad": 3,
+    "timestamp": "2024-01-15T10:45:00+00:00",
+    "libro_id": "BK1001",
+    "resultado": "éxito",
+    "usuario_id": "USR104",
+    "tipo": "lectura_sala"
+  },
+  {
+    "id_solicitud": "sol-009",
+    "prioridad": 3,
+    "timestamp": "2024-01-15T14:30:00+00:00",
+    "libro_id": "BK1005",
+    "resultado": "éxito",
+    "usuario_id": "USR109",
+    "tipo": "prestamo"
+  },
+  {
+    "id_solicitud": "sol-013",
+    "prioridad": 3,
+    "timestamp": "2024-01-15T17:30:00+00:00",
+    "libro_id": "BK1010",
+    "resultado": "éxito",
+    "usuario_id": "USR113",
+    "tipo": "prestamo"
+  },
+  {
+    "id_solicitud": "sol-018",
+    "prioridad": 3,
+    "timestamp": "2024-01-15T21:15:00+00:00",
+    "libro_id": "BK1000",
+    "resultado": "éxito",
+    "usuario_id": "USR118",
+    "tipo": "reserva"
+  },
+  {
+    "id_solicitud": "sol-006",
+    "prioridad": 4,
+    "timestamp": "2024-01-15T12:15:00+00:00",
+    "libro_id": "BK1002",
+    "resultado": "éxito",
+    "usuario_id": "USR106",
+    "tipo": "prestamo"
+  },
+  {
+    "id_solicitud": "sol-011",
+    "prioridad": 4,
+    "timestamp": "2024-01-15T16:00:00+00:00",
+    "libro_id": "BK1008",
+    "resultado": "éxito",
+    "usuario_id": "USR111",
+    "tipo": "lectura_sala"
+  },
+  {
+    "id_solicitud": "sol-017",
+    "prioridad": 4,
+    "timestamp": "2024-01-15T20:30:00+00:00",
+    "libro_id": "BK1014",
+    "resultado": "éxito",
+    "usuario_id": "USR117",
+    "tipo": "prestamo"
+  },
+  {
+    "id_solicitud": "sol-008",
+    "prioridad": 5,
+    "timestamp": "2024-01-15T13:45:00+00:00",
+    "libro_id": "BK1000",
+    "resultado": "sin_ejemplares",
+    "usuario_id": "USR108",
+    "tipo": "prestamo"
+  },
+  {
+    "id_solicitud": "sol-015",
+    "prioridad": 5,
+    "timestamp": "2024-01-15T19:00:00+00:00",
+    "libro_id": "BK1012",
+    "resultado": "éxito",
+    "usuario_id": "USR115",
+    "tipo": "lectura_sala"
+  }
+]

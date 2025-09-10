@@ -1,0 +1,324 @@
+{
+  "solicitudes": [
+    {
+      "id": "sol-2x18ha",
+      "usuario_id": "USR104",
+      "libro_id": "BK1007",
+      "prioridad": 2,
+      "timestamp": "2025-09-12T02:37:00Z",
+      "tipo": "reserva"
+    },
+    {
+      "id": "sol-e8qjnv",
+      "usuario_id": "USR103",
+      "libro_id": "BK1024",
+      "prioridad": 2,
+      "timestamp": "2025-09-08T09:52:00Z",
+      "tipo": "prestamo"
+    },
+    {
+      "id": "sol-u7u6n7",
+      "usuario_id": "USR106",
+      "libro_id": "BK1002",
+      "prioridad": 5,
+      "timestamp": "2025-09-06T20:37:00Z",
+      "tipo": "prestamo"
+    },
+    {
+      "id": "sol-zky22u",
+      "usuario_id": "USR101",
+      "libro_id": "BK1011",
+      "prioridad": 5,
+      "timestamp": "2025-09-11T01:57:00Z",
+      "tipo": "reserva"
+    },
+    {
+      "id": "sol-nsm43d",
+      "usuario_id": "USR111",
+      "libro_id": "BK1020",
+      "prioridad": 4,
+      "timestamp": "2025-09-04T19:33:00Z",
+      "tipo": "lectura_sala"
+    },
+    {
+      "id": "sol-gsxw71",
+      "usuario_id": "USR114",
+      "libro_id": "BK1013",
+      "prioridad": 5,
+      "timestamp": "2025-09-07T10:34:00Z",
+      "tipo": "lectura_sala"
+    },
+    {
+      "id": "sol-43d5iq",
+      "usuario_id": "USR119",
+      "libro_id": "BK1021",
+      "prioridad": 4,
+      "timestamp": "2025-09-08T23:43:00Z",
+      "tipo": "prestamo"
+    },
+    {
+      "id": "sol-rlrmjk",
+      "usuario_id": "USR119",
+      "libro_id": "BK1022",
+      "prioridad": 3,
+      "timestamp": "2025-09-13T23:32:00Z",
+      "tipo": "prestamo"
+    },
+    {
+      "id": "sol-sgioti",
+      "usuario_id": "USR115",
+      "libro_id": "BK1020",
+      "prioridad": 4,
+      "timestamp": "2025-09-11T12:45:00Z",
+      "tipo": "prestamo"
+    },
+    {
+      "id": "sol-dhylur",
+      "usuario_id": "USR116",
+      "libro_id": "BK1011",
+      "prioridad": 4,
+      "timestamp": "2025-09-13T20:35:00Z",
+      "tipo": "lectura_sala"
+    },
+    {
+      "id": "sol-mqlizl",
+      "usuario_id": "USR117",
+      "libro_id": "BK1024",
+      "prioridad": 2,
+      "timestamp": "2025-09-05T16:36:00Z",
+      "tipo": "prestamo"
+    },
+    {
+      "id": "sol-0jv1v9",
+      "usuario_id": "USR106",
+      "libro_id": "BK1009",
+      "prioridad": 2,
+      "timestamp": "2025-09-09T13:05:00Z",
+      "tipo": "prestamo"
+    },
+    {
+      "id": "sol-kzebbk",
+      "usuario_id": "USR104",
+      "libro_id": "BK1020",
+      "prioridad": 4,
+      "timestamp": "2025-09-03T16:01:00Z",
+      "tipo": "prestamo"
+    },
+    {
+      "id": "sol-uqpgb7",
+      "usuario_id": "USR115",
+      "libro_id": "BK1003",
+      "prioridad": 1,
+      "timestamp": "2025-09-10T10:50:00Z",
+      "tipo": "lectura_sala"
+    },
+    {
+      "id": "sol-cwbfuk",
+      "usuario_id": "USR107",
+      "libro_id": "BK1003",
+      "prioridad": 5,
+      "timestamp": "2025-09-10T19:17:00Z",
+      "tipo": "reserva"
+    },
+    {
+      "id": "sol-vw1n6k",
+      "usuario_id": "USR118",
+      "libro_id": "BK1013",
+      "prioridad": 3,
+      "timestamp": "2025-09-14T06:32:00Z",
+      "tipo": "reserva"
+    },
+    {
+      "id": "sol-c8d1wj",
+      "usuario_id": "USR102",
+      "libro_id": "BK1005",
+      "prioridad": 2,
+      "timestamp": "2025-09-05T06:55:00Z",
+      "tipo": "reserva"
+    },
+    {
+      "id": "sol-caqvki",
+      "usuario_id": "USR109",
+      "libro_id": "BK1022",
+      "prioridad": 4,
+      "timestamp": "2025-09-02T22:52:00Z",
+      "tipo": "reserva"
+    },
+    {
+      "id": "sol-ij2v2h",
+      "usuario_id": "USR103",
+      "libro_id": "BK1017",
+      "prioridad": 2,
+      "timestamp": "2025-09-04T17:22:00Z",
+      "tipo": "lectura_sala"
+    },
+    {
+      "id": "sol-3cfl0u",
+      "usuario_id": "USR109",
+      "libro_id": "BK1014",
+      "prioridad": 1,
+      "timestamp": "2025-09-11T23:58:00Z",
+      "tipo": "reserva"
+    },
+    {
+      "id": "sol-kojtpv",
+      "usuario_id": "USR113",
+      "libro_id": "BK1023",
+      "prioridad": 3,
+      "timestamp": "2025-09-15T01:42:00Z",
+      "tipo": "lectura_sala"
+    },
+    {
+      "id": "sol-aiy4va",
+      "usuario_id": "USR108",
+      "libro_id": "BK1018",
+      "prioridad": 1,
+      "timestamp": "2025-09-05T07:40:00Z",
+      "tipo": "lectura_sala"
+    },
+    {
+      "id": "sol-spk9p3",
+      "usuario_id": "USR102",
+      "libro_id": "BK1015",
+      "prioridad": 3,
+      "timestamp": "2025-09-10T15:00:00Z",
+      "tipo": "lectura_sala"
+    },
+    {
+      "id": "sol-ldforx",
+      "usuario_id": "USR112",
+      "libro_id": "BK1026",
+      "prioridad": 5,
+      "timestamp": "2025-09-02T04:02:00Z",
+      "tipo": "lectura_sala"
+    },
+    {
+      "id": "sol-dje153",
+      "usuario_id": "USR100",
+      "libro_id": "BK1021",
+      "prioridad": 5,
+      "timestamp": "2025-09-11T20:18:00Z",
+      "tipo": "lectura_sala"
+    },
+    {
+      "id": "sol-bswrpb",
+      "usuario_id": "USR108",
+      "libro_id": "BK1017",
+      "prioridad": 2,
+      "timestamp": "2025-09-07T21:18:00Z",
+      "tipo": "lectura_sala"
+    },
+    {
+      "id": "sol-5rbw2z",
+      "usuario_id": "USR109",
+      "libro_id": "BK1017",
+      "prioridad": 1,
+      "timestamp": "2025-09-13T21:36:00Z",
+      "tipo": "lectura_sala"
+    },
+    {
+      "id": "sol-d96qe3",
+      "usuario_id": "USR115",
+      "libro_id": "BK1029",
+      "prioridad": 3,
+      "timestamp": "2025-09-12T21:54:00Z",
+      "tipo": "reserva"
+    },
+    {
+      "id": "sol-j49itn",
+      "usuario_id": "USR119",
+      "libro_id": "BK1016",
+      "prioridad": 2,
+      "timestamp": "2025-09-02T22:07:00Z",
+      "tipo": "lectura_sala"
+    },
+    {
+      "id": "sol-14m2ja",
+      "usuario_id": "USR109",
+      "libro_id": "BK1026",
+      "prioridad": 5,
+      "timestamp": "2025-09-14T12:42:00Z",
+      "tipo": "reserva"
+    },
+    {
+      "id": "sol-rftmtt",
+      "usuario_id": "USR114",
+      "libro_id": "BK1029",
+      "prioridad": 3,
+      "timestamp": "2025-09-05T15:01:00Z",
+      "tipo": "reserva"
+    },
+    {
+      "id": "sol-in4olr",
+      "usuario_id": "USR112",
+      "libro_id": "BK1012",
+      "prioridad": 2,
+      "timestamp": "2025-09-12T14:30:00Z",
+      "tipo": "prestamo"
+    },
+    {
+      "id": "sol-e8ld4d",
+      "usuario_id": "USR114",
+      "libro_id": "BK1000",
+      "prioridad": 2,
+      "timestamp": "2025-09-10T15:54:00Z",
+      "tipo": "reserva"
+    },
+    {
+      "id": "sol-8c2jwo",
+      "usuario_id": "USR102",
+      "libro_id": "BK1027",
+      "prioridad": 3,
+      "timestamp": "2025-09-13T11:25:00Z",
+      "tipo": "lectura_sala"
+    },
+    {
+      "id": "sol-8w5rtw",
+      "usuario_id": "USR107",
+      "libro_id": "BK1020",
+      "prioridad": 3,
+      "timestamp": "2025-09-06T12:14:00Z",
+      "tipo": "reserva"
+    },
+    {
+      "id": "sol-d91zdf",
+      "usuario_id": "USR109",
+      "libro_id": "BK1028",
+      "prioridad": 1,
+      "timestamp": "2025-09-02T09:07:00Z",
+      "tipo": "lectura_sala"
+    },
+    {
+      "id": "sol-2knftu",
+      "usuario_id": "USR105",
+      "libro_id": "BK1005",
+      "prioridad": 2,
+      "timestamp": "2025-09-03T03:07:00Z",
+      "tipo": "reserva"
+    },
+    {
+      "id": "sol-5wi6fq",
+      "usuario_id": "USR108",
+      "libro_id": "BK1014",
+      "prioridad": 3,
+      "timestamp": "2025-09-01T13:07:00Z",
+      "tipo": "lectura_sala"
+    },
+    {
+      "id": "sol-6yfpmv",
+      "usuario_id": "USR113",
+      "libro_id": "BK1022",
+      "prioridad": 3,
+      "timestamp": "2025-09-11T17:29:00Z",
+      "tipo": "lectura_sala"
+    },
+    {
+      "id": "sol-hnriuu",
+      "usuario_id": "USR109",
+      "libro_id": "BK1000",
+      "prioridad": 4,
+      "timestamp": "2025-09-07T13:54:00Z",
+      "tipo": "prestamo"
+    }
+  ]
+}

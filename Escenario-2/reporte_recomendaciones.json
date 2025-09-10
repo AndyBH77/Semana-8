@@ -1,0 +1,53 @@
+{
+  "libro_origen": "BK1000",
+  "titulo_origen": "Cien años de soledad",
+  "profundidad": 2,
+  "recomendaciones": [
+    {
+      "id": "BK1002",
+      "titulo": "La ciudad y los perros",
+      "anio": 1963
+    },
+    {
+      "id": "BK1006",
+      "titulo": "La tregua",
+      "anio": 1960
+    },
+    {
+      "id": "BK1003",
+      "titulo": "Pedro Páramo",
+      "anio": 1955
+    },
+    {
+      "id": "BK1007",
+      "titulo": "El amor en los tiempos del cólera",
+      "anio": 1985
+    },
+    {
+      "id": "BK1005",
+      "titulo": "El túnel",
+      "anio": 1948
+    },
+    {
+      "id": "BK1008",
+      "titulo": "El llano en llamas",
+      "anio": 1953
+    },
+    {
+      "id": "BK1000",
+      "titulo": "Cien años de soledad",
+      "anio": 1967
+    },
+    {
+      "id": "BK1001",
+      "titulo": "Rayuela",
+      "anio": 1963
+    },
+    {
+      "id": "BK1004",
+      "titulo": "Ficciones",
+      "anio": 1944
+    }
+  ],
+  "total_recomendaciones": 9
+}

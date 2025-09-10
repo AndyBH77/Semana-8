@@ -1,0 +1,358 @@
+{
+  "llamadas": [
+    {
+      "id": "call-aji0y6",
+      "timestamp": "2025-09-02T14:24:00Z",
+      "prioridad": 1,
+      "categoria": "emergencia_medica",
+      "ubicacion": "Aeropuerto",
+      "descripcion": "Reporte ciudadano vía app",
+      "subtareas": [],
+      "tiempo_estimado_respuesta": 69
+    },
+    {
+      "id": "call-ahxthv",
+      "timestamp": "2025-09-08T04:23:00Z",
+      "prioridad": 1,
+      "categoria": "asalto",
+      "ubicacion": "Aeropuerto",
+      "descripcion": "Sensor automático activado",
+      "subtareas": [],
+      "tiempo_estimado_respuesta": 48
+    },
+    {
+      "id": "call-dd4v30",
+      "timestamp": "2025-09-02T11:54:00Z",
+      "prioridad": 5,
+      "categoria": "incendio",
+      "ubicacion": "Aeropuerto",
+      "descripcion": "Reporte ciudadano vía app",
+      "subtareas": [
+        {
+          "tipo": "policia",
+          "recurso_estimado": 1,
+          "subtareas": []
+        },
+        {
+          "tipo": "policia",
+          "recurso_estimado": 3,
+          "subtareas": [
+            {
+              "tipo": "bomberos",
+              "recurso_estimado": 4,
+              "subtareas": []
+            }
+          ]
+        }
+      ],
+      "tiempo_estimado_respuesta": 86
+    },
+    {
+      "id": "call-fmyzyc",
+      "timestamp": "2025-09-05T11:37:00Z",
+      "prioridad": 2,
+      "categoria": "emergencia_medica",
+      "ubicacion": "Km 12 Ruta 27",
+      "descripcion": "Llamada directa al 9-1-1",
+      "subtareas": [],
+      "tiempo_estimado_respuesta": 86
+    },
+    {
+      "id": "call-hl1c32",
+      "timestamp": "2025-09-07T16:05:00Z",
+      "prioridad": 4,
+      "categoria": "accidente",
+      "ubicacion": "Calle 5 #23",
+      "descripcion": "Llamada directa al 9-1-1",
+      "subtareas": [
+        {
+          "tipo": "policia",
+          "recurso_estimado": 4,
+          "subtareas": []
+        },
+        {
+          "tipo": "rescate_montana",
+          "recurso_estimado": 2,
+          "subtareas": []
+        }
+      ],
+      "tiempo_estimado_respuesta": 76
+    },
+    {
+      "id": "call-jv6oh9",
+      "timestamp": "2025-09-07T11:10:00Z",
+      "prioridad": 5,
+      "categoria": "rescate",
+      "ubicacion": "Calle 5 #23",
+      "descripcion": "Reporte ciudadano vía app",
+      "subtareas": [
+        {
+          "tipo": "policia",
+          "recurso_estimado": 4,
+          "subtareas": [
+            {
+              "tipo": "rescate_montana",
+              "recurso_estimado": 4,
+              "subtareas": []
+            },
+            {
+              "tipo": "ambulancia",
+              "recurso_estimado": 1,
+              "subtareas": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "call-ytjxep",
+      "timestamp": "2025-09-02T15:16:00Z",
+      "prioridad": 4,
+      "categoria": "incendio",
+      "ubicacion": "Barrio La Cruz",
+      "descripcion": "Llamada directa al 9-1-1",
+      "subtareas": [
+        {
+          "tipo": "ambulancia",
+          "recurso_estimado": 2,
+          "subtareas": []
+        }
+      ]
+    },
+    {
+      "id": "call-877vre",
+      "timestamp": "2025-09-07T11:17:00Z",
+      "prioridad": 3,
+      "categoria": "accidente",
+      "ubicacion": "Km 12 Ruta 27",
+      "descripcion": "Reporte ciudadano vía app",
+      "subtareas": [],
+      "tiempo_estimado_respuesta": 15
+    },
+    {
+      "id": "call-039tex",
+      "timestamp": "2025-09-02T07:23:00Z",
+      "prioridad": 5,
+      "categoria": "asalto",
+      "ubicacion": "Barrio La Cruz",
+      "descripcion": "Aviso de patrulla",
+      "subtareas": [
+        {
+          "tipo": "ambulancia",
+          "recurso_estimado": 4,
+          "subtareas": [
+            {
+              "tipo": "rescate_montana",
+              "recurso_estimado": 4,
+              "subtareas": []
+            },
+            {
+              "tipo": "bomberos",
+              "recurso_estimado": 2,
+              "subtareas": []
+            }
+          ]
+        }
+      ],
+      "tiempo_estimado_respuesta": 48
+    },
+    {
+      "id": "call-vihcwi",
+      "timestamp": "2025-09-01T13:44:00Z",
+      "prioridad": 1,
+      "categoria": "accidente",
+      "ubicacion": "Calle 5 #23",
+      "descripcion": "Llamada directa al 9-1-1",
+      "subtareas": [],
+      "tiempo_estimado_respuesta": 74
+    },
+    {
+      "id": "call-05uiro",
+      "timestamp": "2025-09-02T20:07:00Z",
+      "prioridad": 1,
+      "categoria": "incendio",
+      "ubicacion": "Aeropuerto",
+      "descripcion": "Sensor automático activado",
+      "subtareas": [],
+      "tiempo_estimado_respuesta": 11
+    },
+    {
+      "id": "call-c02dgt",
+      "timestamp": "2025-09-02T10:52:00Z",
+      "prioridad": 2,
+      "categoria": "rescate",
+      "ubicacion": "Parque Central",
+      "descripcion": "Sensor automático activado",
+      "subtareas": []
+    },
+    {
+      "id": "call-p5tb94",
+      "timestamp": "2025-09-02T04:35:00Z",
+      "prioridad": 1,
+      "categoria": "asalto",
+      "ubicacion": "Parque Central",
+      "descripcion": "Aviso de patrulla",
+      "subtareas": [],
+      "tiempo_estimado_respuesta": 56
+    },
+    {
+      "id": "call-fao72k",
+      "timestamp": "2025-09-02T00:00:00Z",
+      "prioridad": 5,
+      "categoria": "rescate",
+      "ubicacion": "Parque Central",
+      "descripcion": "Llamada directa al 9-1-1",
+      "subtareas": []
+    },
+    {
+      "id": "call-0clbr7",
+      "timestamp": "2025-09-07T22:09:00Z",
+      "prioridad": 5,
+      "categoria": "asalto",
+      "ubicacion": "Av. Central 100",
+      "descripcion": "Reporte ciudadano vía app",
+      "subtareas": [
+        {
+          "tipo": "bomberos",
+          "recurso_estimado": 2,
+          "subtareas": []
+        }
+      ]
+    },
+    {
+      "id": "call-ivwpvs",
+      "timestamp": "2025-09-07T19:33:00Z",
+      "prioridad": 3,
+      "categoria": "asalto",
+      "ubicacion": "Zona Industrial",
+      "descripcion": "Llamada directa al 9-1-1",
+      "subtareas": [],
+      "tiempo_estimado_respuesta": 87
+    },
+    {
+      "id": "call-q77awu",
+      "timestamp": "2025-09-04T17:55:00Z",
+      "prioridad": 1,
+      "categoria": "incendio",
+      "ubicacion": "Km 12 Ruta 27",
+      "descripcion": "Sensor automático activado",
+      "subtareas": [],
+      "tiempo_estimado_respuesta": 13
+    },
+    {
+      "id": "call-nf4zw9",
+      "timestamp": "2025-09-04T02:42:00Z",
+      "prioridad": 5,
+      "categoria": "incendio",
+      "ubicacion": "Barrio La Cruz",
+      "descripcion": "Reporte ciudadano vía app",
+      "subtareas": [
+        {
+          "tipo": "ambulancia",
+          "recurso_estimado": 1,
+          "subtareas": [
+            {
+              "tipo": "ambulancia",
+              "recurso_estimado": 3,
+              "subtareas": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "call-hwjr64",
+      "timestamp": "2025-09-05T05:37:00Z",
+      "prioridad": 1,
+      "categoria": "rescate",
+      "ubicacion": "Barrio La Cruz",
+      "descripcion": "Reporte ciudadano vía app",
+      "subtareas": []
+    },
+    {
+      "id": "call-fpzue8",
+      "timestamp": "2025-09-04T07:31:00Z",
+      "prioridad": 2,
+      "categoria": "emergencia_medica",
+      "ubicacion": "Av. Central 100",
+      "descripcion": "Sensor automático activado",
+      "subtareas": [
+        {
+          "tipo": "rescate_montana",
+          "recurso_estimado": 2,
+          "subtareas": []
+        }
+      ],
+      "tiempo_estimado_respuesta": 10
+    },
+    {
+      "id": "call-hid25o",
+      "timestamp": "2025-09-05T09:42:00Z",
+      "prioridad": 5,
+      "categoria": "asalto",
+      "ubicacion": "Km 12 Ruta 27",
+      "descripcion": "Llamada directa al 9-1-1",
+      "subtareas": [
+        {
+          "tipo": "rescate_montana",
+          "recurso_estimado": 1,
+          "subtareas": []
+        }
+      ]
+    },
+    {
+      "id": "call-253j2d",
+      "timestamp": "2025-09-06T00:25:00Z",
+      "prioridad": 1,
+      "categoria": "rescate",
+      "ubicacion": "Km 12 Ruta 27",
+      "descripcion": "Llamada directa al 9-1-1",
+      "subtareas": [
+        {
+          "tipo": "ambulancia",
+          "recurso_estimado": 3,
+          "subtareas": [
+            {
+              "tipo": "policia",
+              "recurso_estimado": 1,
+              "subtareas": []
+            }
+          ]
+        },
+        {
+          "tipo": "policia",
+          "recurso_estimado": 4,
+          "subtareas": []
+        }
+      ]
+    },
+    {
+      "id": "call-msy4la",
+      "timestamp": "2025-09-04T12:13:00Z",
+      "prioridad": 3,
+      "categoria": "asalto",
+      "ubicacion": "Barrio La Cruz",
+      "descripcion": "Reporte ciudadano vía app",
+      "subtareas": [],
+      "tiempo_estimado_respuesta": 45
+    },
+    {
+      "id": "call-vsnujz",
+      "timestamp": "2025-09-06T07:09:00Z",
+      "prioridad": 1,
+      "categoria": "emergencia_medica",
+      "ubicacion": "Km 12 Ruta 27",
+      "descripcion": "Sensor automático activado",
+      "subtareas": []
+    },
+    {
+      "id": "call-wxe6sy",
+      "timestamp": "2025-09-05T02:09:00Z",
+      "prioridad": 3,
+      "categoria": "rescate",
+      "ubicacion": "Barrio La Cruz",
+      "descripcion": "Llamada directa al 9-1-1",
+      "subtareas": []
+    }
+  ]
+}

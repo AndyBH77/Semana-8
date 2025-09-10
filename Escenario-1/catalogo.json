@@ -1,0 +1,325 @@
+{
+  "libros": [
+    {
+      "id": "BK1000",
+      "titulo": "Título 01",
+      "anio": 2004,
+      "popularidad": 67.73,
+      "recomendaciones": [
+        "BK1013"
+      ],
+      "ejemplares_disponibles": 2
+    },
+    {
+      "id": "BK1001",
+      "titulo": "Título 02",
+      "anio": 2019,
+      "popularidad": 56.91,
+      "recomendaciones": [
+        "BK1023"
+      ],
+      "ejemplares_disponibles": 6
+    },
+    {
+      "id": "BK1002",
+      "titulo": "Título 03",
+      "anio": 2015,
+      "popularidad": 83.37,
+      "recomendaciones": [
+        "BK1003"
+      ],
+      "ejemplares_disponibles": 4
+    },
+    {
+      "id": "BK1003",
+      "titulo": "Título 04",
+      "anio": 1998,
+      "popularidad": 21.02,
+      "recomendaciones": [
+        "BK1014",
+        "BK1011",
+        "BK1018"
+      ],
+      "ejemplares_disponibles": 5
+    },
+    {
+      "id": "BK1004",
+      "titulo": "Título 05",
+      "anio": 2009,
+      "popularidad": 44.18,
+      "recomendaciones": [
+        "BK1014",
+        "BK1001",
+        "BK1007"
+      ],
+      "ejemplares_disponibles": 3
+    },
+    {
+      "id": "BK1005",
+      "titulo": "Título 06",
+      "anio": 2012,
+      "popularidad": 47.32,
+      "recomendaciones": [
+        "BK1013",
+        "BK1029",
+        "BK1025"
+      ],
+      "ejemplares_disponibles": 2
+    },
+    {
+      "id": "BK1006",
+      "titulo": "Título 07",
+      "anio": 2022,
+      "popularidad": 8.48,
+      "recomendaciones": [],
+      "ejemplares_disponibles": 8
+    },
+    {
+      "id": "BK1007",
+      "titulo": "Título 08",
+      "anio": 2022,
+      "popularidad": 63.29,
+      "recomendaciones": [
+        "BK1016",
+        "BK1000",
+        "BK1012"
+      ],
+      "ejemplares_disponibles": 5
+    },
+    {
+      "id": "BK1008",
+      "titulo": "Título 09",
+      "anio": 1985,
+      "popularidad": 81.84,
+      "recomendaciones": [
+        "BK1025",
+        "BK1013"
+      ],
+      "ejemplares_disponibles": 3
+    },
+    {
+      "id": "BK1009",
+      "titulo": "Título 10",
+      "anio": 2023,
+      "popularidad": 31.04,
+      "recomendaciones": [
+        "BK1018",
+        "BK1024",
+        "BK1026"
+      ],
+      "ejemplares_disponibles": 3
+    },
+    {
+      "id": "BK1010",
+      "titulo": "Título 11",
+      "anio": 1989,
+      "popularidad": 2.44,
+      "recomendaciones": [
+        "BK1016"
+      ],
+      "ejemplares_disponibles": 3
+    },
+    {
+      "id": "BK1011",
+      "titulo": "Título 12",
+      "anio": 2010,
+      "popularidad": 61.13,
+      "recomendaciones": [
+        "BK1008"
+      ],
+      "ejemplares_disponibles": 1
+    },
+    {
+      "id": "BK1012",
+      "titulo": "Título 13",
+      "anio": 2009,
+      "popularidad": 41.44,
+      "recomendaciones": [
+        "BK1016",
+        "BK1000",
+        "BK1013"
+      ],
+      "ejemplares_disponibles": 3
+    },
+    {
+      "id": "BK1013",
+      "titulo": "Título 14",
+      "anio": 2025,
+      "popularidad": 69.64,
+      "recomendaciones": [
+        "BK1022",
+        "BK1026"
+      ],
+      "ejemplares_disponibles": 7
+    },
+    {
+      "id": "BK1014",
+      "titulo": "Título 15",
+      "anio": 2005,
+      "popularidad": 24.4,
+      "recomendaciones": [
+        "BK1024",
+        "BK1005",
+        "BK1027"
+      ],
+      "ejemplares_disponibles": 0
+    },
+    {
+      "id": "BK1015",
+      "titulo": "Título 16",
+      "anio": 1986,
+      "popularidad": 77.84,
+      "recomendaciones": [
+        "BK1004",
+        "BK1020",
+        "BK1018"
+      ],
+      "ejemplares_disponibles": 3
+    },
+    {
+      "id": "BK1016",
+      "titulo": "Título 17",
+      "anio": 1991,
+      "popularidad": 80.41,
+      "recomendaciones": [],
+      "ejemplares_disponibles": 8
+    },
+    {
+      "id": "BK1017",
+      "titulo": "Título 18",
+      "anio": 2009,
+      "popularidad": 5.02,
+      "recomendaciones": [
+        "BK1019",
+        "BK1022",
+        "BK1000"
+      ],
+      "ejemplares_disponibles": 3
+    },
+    {
+      "id": "BK1018",
+      "titulo": "Título 19",
+      "anio": 1987,
+      "popularidad": 45.65,
+      "recomendaciones": [],
+      "ejemplares_disponibles": 7
+    },
+    {
+      "id": "BK1019",
+      "titulo": "Título 20",
+      "anio": 2022,
+      "popularidad": 53.11,
+      "recomendaciones": [
+        "BK1004",
+        "BK1028",
+        "BK1014"
+      ],
+      "ejemplares_disponibles": 8
+    },
+    {
+      "id": "BK1020",
+      "titulo": "Título 21",
+      "anio": 2018,
+      "popularidad": 31.73,
+      "recomendaciones": [
+        "BK1001"
+      ],
+      "ejemplares_disponibles": 7
+    },
+    {
+      "id": "BK1021",
+      "titulo": "Título 22",
+      "anio": 2019,
+      "popularidad": 81.5,
+      "recomendaciones": [
+        "BK1012",
+        "BK1010"
+      ],
+      "ejemplares_disponibles": 8
+    },
+    {
+      "id": "BK1022",
+      "titulo": "Título 23",
+      "anio": 2007,
+      "popularidad": 83.06,
+      "recomendaciones": [
+        "BK1014"
+      ],
+      "ejemplares_disponibles": 8
+    },
+    {
+      "id": "BK1023",
+      "titulo": "Título 24",
+      "anio": 2008,
+      "popularidad": 89.72,
+      "recomendaciones": [
+        "BK1010",
+        "BK1025"
+      ],
+      "ejemplares_disponibles": 7
+    },
+    {
+      "id": "BK1024",
+      "titulo": "Título 25",
+      "anio": 2008,
+      "popularidad": 25.92,
+      "recomendaciones": [
+        "BK1008",
+        "BK1025",
+        "BK1027"
+      ],
+      "ejemplares_disponibles": 3
+    },
+    {
+      "id": "BK1025",
+      "titulo": "Título 26",
+      "anio": 2020,
+      "popularidad": 27.73,
+      "recomendaciones": [
+        "BK1008",
+        "BK1027",
+        "BK1002"
+      ],
+      "ejemplares_disponibles": 8
+    },
+    {
+      "id": "BK1026",
+      "titulo": "Título 27",
+      "anio": 2011,
+      "popularidad": 62.67,
+      "recomendaciones": [
+        "BK1000",
+        "BK1023",
+        "BK1017"
+      ],
+      "ejemplares_disponibles": 4
+    },
+    {
+      "id": "BK1027",
+      "titulo": "Título 28",
+      "anio": 2008,
+      "popularidad": 7.75,
+      "recomendaciones": [],
+      "ejemplares_disponibles": 4
+    },
+    {
+      "id": "BK1028",
+      "titulo": "Título 29",
+      "anio": 1995,
+      "popularidad": 27.17,
+      "recomendaciones": [
+        "BK1007",
+        "BK1020"
+      ],
+      "ejemplares_disponibles": 5
+    },
+    {
+      "id": "BK1029",
+      "titulo": "Título 30",
+      "anio": 2014,
+      "popularidad": 8.06,
+      "recomendaciones": [],
+      "ejemplares_disponibles": 2
+    }
+  ]
+}

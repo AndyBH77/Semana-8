@@ -1,0 +1,92 @@
+[
+  {
+    "id": "BK1004",
+    "titulo": "Ficciones",
+    "anio": 1944,
+    "ejemplares_disponibles": 4
+  },
+  {
+    "id": "BK1005",
+    "titulo": "El túnel",
+    "anio": 1948,
+    "ejemplares_disponibles": 2
+  },
+  {
+    "id": "BK1009",
+    "titulo": "El Aleph",
+    "anio": 1949,
+    "ejemplares_disponibles": 2
+  },
+  {
+    "id": "BK1008",
+    "titulo": "El llano en llamas",
+    "anio": 1953,
+    "ejemplares_disponibles": 3
+  },
+  {
+    "id": "BK1003",
+    "titulo": "Pedro Páramo",
+    "anio": 1955,
+    "ejemplares_disponibles": 0
+  },
+  {
+    "id": "BK1014",
+    "titulo": "El hacedor",
+    "anio": 1960,
+    "ejemplares_disponibles": 1
+  },
+  {
+    "id": "BK1006",
+    "titulo": "La tregua",
+    "anio": 1960,
+    "ejemplares_disponibles": 1
+  },
+  {
+    "id": "BK1011",
+    "titulo": "Sobre héroes y tumbas",
+    "anio": 1961,
+    "ejemplares_disponibles": 0
+  },
+  {
+    "id": "BK1002",
+    "titulo": "La ciudad y los perros",
+    "anio": 1963,
+    "ejemplares_disponibles": 3
+  },
+  {
+    "id": "BK1001",
+    "titulo": "Rayuela",
+    "anio": 1963,
+    "ejemplares_disponibles": 0
+  },
+  {
+    "id": "BK1012",
+    "titulo": "Gracias por el fuego",
+    "anio": 1965,
+    "ejemplares_disponibles": 2
+  },
+  {
+    "id": "BK1000",
+    "titulo": "Cien años de soledad",
+    "anio": 1967,
+    "ejemplares_disponibles": 0
+  },
+  {
+    "id": "BK1010",
+    "titulo": "El libro de arena",
+    "anio": 1975,
+    "ejemplares_disponibles": 1
+  },
+  {
+    "id": "BK1013",
+    "titulo": "Crónica de una muerte anunciada",
+    "anio": 1981,
+    "ejemplares_disponibles": 3
+  },
+  {
+    "id": "BK1007",
+    "titulo": "El amor en los tiempos del cólera",
+    "anio": 1985,
+    "ejemplares_disponibles": 0
+  }
+]

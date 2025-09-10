@@ -1,0 +1,199 @@
+{
+  "libros": [
+    {
+      "id": "BK1000",
+      "titulo": "Cien años de soledad",
+      "anio": 1967,
+      "popularidad": 95.7,
+      "recomendaciones": ["BK1001", "BK1002", "BK1003"],
+      "ejemplares_disponibles": 3,
+      "metadatos": {
+        "genero": "Realismo mágico",
+        "autor": "Gabriel García Márquez",
+        "paginas": 432
+      }
+    },
+    {
+      "id": "BK1001",
+      "titulo": "Rayuela",
+      "anio": 1963,
+      "popularidad": 88.2,
+      "recomendaciones": ["BK1000", "BK1004", "BK1005"],
+      "ejemplares_disponibles": 2,
+      "metadatos": {
+        "genero": "Novela experimental",
+        "autor": "Julio Cortázar",
+        "paginas": 736
+      }
+    },
+    {
+      "id": "BK1002",
+      "titulo": "La ciudad y los perros",
+      "anio": 1963,
+      "popularidad": 84.5,
+      "recomendaciones": ["BK1006", "BK1007"],
+      "ejemplares_disponibles": 4,
+      "metadatos": {
+        "genero": "Novela",
+        "autor": "Mario Vargas Llosa",
+        "paginas": 356
+      }
+    },
+    {
+      "id": "BK1003",
+      "titulo": "Pedro Páramo",
+      "anio": 1955,
+      "popularidad": 91.3,
+      "recomendaciones": ["BK1000", "BK1008"],
+      "ejemplares_disponibles": 1,
+      "metadatos": {
+        "genero": "Realismo mágico",
+        "autor": "Juan Rulfo",
+        "paginas": 128
+      }
+    },
+    {
+      "id": "BK1004",
+      "titulo": "Ficciones",
+      "anio": 1944,
+      "popularidad": 89.8,
+      "recomendaciones": ["BK1001", "BK1009", "BK1010"],
+      "ejemplares_disponibles": 5,
+      "metadatos": {
+        "genero": "Cuentos",
+        "autor": "Jorge Luis Borges",
+        "paginas": 224
+      }
+    },
+    {
+      "id": "BK1005",
+      "titulo": "El túnel",
+      "anio": 1948,
+      "popularidad": 82.1,
+      "recomendaciones": ["BK1001", "BK1011"],
+      "ejemplares_disponibles": 3,
+      "metadatos": {
+        "genero": "Novela psicológica",
+        "autor": "Ernesto Sabato",
+        "paginas": 156
+      }
+    },
+    {
+      "id": "BK1006",
+      "titulo": "La tregua",
+      "anio": 1960,
+      "popularidad": 78.9,
+      "recomendaciones": ["BK1002", "BK1012"],
+      "ejemplares_disponibles": 2,
+      "metadatos": {
+        "genero": "Novela",
+        "autor": "Mario Benedetti",
+        "paginas": 192
+      }
+    },
+    {
+      "id": "BK1007",
+      "titulo": "El amor en los tiempos del cólera",
+      "anio": 1985,
+      "popularidad": 87.4,
+      "recomendaciones": ["BK1000", "BK1013"],
+      "ejemplares_disponibles": 0,
+      "metadatos": {
+        "genero": "Novela romántica",
+        "autor": "Gabriel García Márquez",
+        "paginas": 464
+      }
+    },
+    {
+      "id": "BK1008",
+      "titulo": "El llano en llamas",
+      "anio": 1953,
+      "popularidad": 80.2,
+      "recomendaciones": ["BK1003"],
+      "ejemplares_disponibles": 4,
+      "metadatos": {
+        "genero": "Cuentos",
+        "autor": "Juan Rulfo",
+        "paginas": 144
+      }
+    },
+    {
+      "id": "BK1009",
+      "titulo": "El Aleph",
+      "anio": 1949,
+      "popularidad": 86.7,
+      "recomendaciones": ["BK1004", "BK1014"],
+      "ejemplares_disponibles": 3,
+      "metadatos": {
+        "genero": "Cuentos",
+        "autor": "Jorge Luis Borges",
+        "paginas": 208
+      }
+    },
+    {
+      "id": "BK1010",
+      "titulo": "El libro de arena",
+      "anio": 1975,
+      "popularidad": 79.5,
+      "recomendaciones": ["BK1004", "BK1009"],
+      "ejemplares_disponibles": 2,
+      "metadatos": {
+        "genero": "Cuentos",
+        "autor": "Jorge Luis Borges",
+        "paginas": 176
+      }
+    },
+    {
+      "id": "BK1011",
+      "titulo": "Sobre héroes y tumbas",
+      "anio": 1961,
+      "popularidad": 83.6,
+      "recomendaciones": ["BK1005"],
+      "ejemplares_disponibles": 1,
+      "metadatos": {
+        "genero": "Novela",
+        "autor": "Ernesto Sabato",
+        "paginas": 612
+      }
+    },
+    {
+      "id": "BK1012",
+      "titulo": "Gracias por el fuego",
+      "anio": 1965,
+      "popularidad": 76.8,
+      "recomendaciones": ["BK1006"],
+      "ejemplares_disponibles": 3,
+      "metadatos": {
+        "genero": "Novela",
+        "autor": "Mario Benedetti",
+        "paginas": 256
+      }
+    },
+    {
+      "id": "BK1013",
+      "titulo": "Crónica de una muerte anunciada",
+      "anio": 1981,
+      "popularidad": 85.3,
+      "recomendaciones": ["BK1000", "BK1007"],
+      "ejemplares_disponibles": 4,
+      "metadatos": {
+        "genero": "Novela",
+        "autor": "Gabriel García Márquez",
+        "paginas": 128
+      }
+    },
+    {
+      "id": "BK1014",
+      "titulo": "El hacedor",
+      "anio": 1960,
+      "popularidad": 81.9,
+      "recomendaciones": ["BK1009"],
+      "ejemplares_disponibles": 2,
+      "metadatos": {
+        "genero": "Poesía y prosa",
+        "autor": "Jorge Luis Borges",
+        "paginas": 160
+      }
+    }
+  ]
+}
