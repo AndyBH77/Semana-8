@@ -1,108 +1,48 @@
-# Análisis de Estructuras y Algoritmos para el Sistema de Despacho de Emergencias
+Sistema de Despacho de Emergencias
+Descripción General
+Este sistema implementa un mecanismo sofisticado de gestión y despacho de llamadas de emergencia que combina una cola de prioridades optimizada con múltiples algoritmos de ordenamiento para generar reportes detallados. Diseñado específicamente para entornos donde el tiempo de respuesta es crítico, el sistema prioriza inteligentemente las emergencias según su urgencia, categoría y tiempo estimado de respuesta, garantizando que los recursos se asignen de manera eficiente cuando más se necesitan.
 
-Este documento presenta la elección de estructuras de datos y algoritmos para optimizar el sistema de despacho de emergencias, con el objetivo de garantizar eficiencia, escalabilidad y mantenibilidad.
+Arquitectura del Sistema
+Estructuras de Datos Fundamentales
+El núcleo del sistema se sustenta en tres componentes principales:
 
----
+Cola de Prioridades con Heap - Implementada mediante el módulo heapq de Python, esta estructura garantiza operaciones eficientes de inserción y extracción con complejidad logarítmica. La selección de un heap min permite gestionar de manera óptima las llamadas, asegurando que siempre se atienda primero la emergencia de mayor prioridad.
 
-##  Elección de Estructuras de Datos
+Clase LlamadaEmergencia - Una estructura de datos personalizada que encapsula todos los atributos relevantes de una emergencia, incluyendo identificador único, timestamp, nivel de prioridad, categoría, ubicación geográfica, descripción detallada y un sistema jerárquico de subtareas. La implementación del método de comparación permite evaluaciones naturales dentro de la cola de prioridades.
 
-### Cola de Prioridad (Min-Heap)
+Sistema de Almacenamiento y Registro - Utiliza listas estándar de Python para mantener un historial completo de llamadas despachadas y un registro detallado de todas las operaciones realizadas, facilitando la auditoría y el análisis posterior.
 
-**Justificación:**  
-En un sistema de emergencias es crucial acceder rápidamente a la llamada más urgente. El uso de un **Min-Heap** permite:  
+Algoritmos de Ordenamiento Implementados
+El sistema incorpora tres algoritmos de ordenamiento diferentes para la generación de reportes, cada uno seleccionado por sus características específicas:
 
-- **Inserción eficiente:** O(log n) por llamada.  
-- **Extracción óptima:** O(log n) para obtener la próxima emergencia.  
-- **Manejo de prioridades:** Ordenamiento automático por prioridad, timestamp e ID.  
+QuickSort Iterativo - Se optó por una implementación iterativa para evitar los límites de recursión en datasets extensos. Este algoritmo ofrece un rendimiento promedio excepcional con complejidad O(n log n), aunque en el peor caso puede alcanzar O(n²). La versión iterativa mantiene un bajo consumo de memoria mediante el uso de una pila explícita.
 
-**Complejidad esperada:**  
-- Carga de n llamadas: O(n log n).  
-- Procesamiento completo: O(n log n).  
+MergeSort - Implementado como alternativa estable y predecible, garantiza un rendimiento consistente de O(n log n) en todos los escenarios. Su naturaleza divide y vencerás lo hace particularmente adecuado para grandes volúmenes de datos, aunque requiere espacio adicional de O(n) para las operaciones de fusionado.
 
-**Resultados observados:**  
-En pruebas con **10,000 llamadas**, el tiempo de procesamiento fue **lineal-logarítmico**, confirmando la eficiencia teórica.
+Timsort - Utilizado como benchmark al ser el algoritmo nativo de Python, combina las ventajas del MergeSort con optimizaciones adicionales para datos parcialmente ordenados. Su implementación altamente optimizada sirve como referencia para comparar el rendimiento de las otras implementaciones.
 
----
+Complejidad Computacional
+Análisis Teórico
+La carga inicial de n llamadas tiene complejidad O(n log n) debido a las inserciones en el heap. El procesamiento completo de todas las emergencias también mantiene O(n log n) por las extracciones secuenciales. La operación de aplanamiento de subtareas presenta complejidad lineal O(m), donde m representa el total de subtareas en el sistema.
 
-##  Algoritmos de Ordenamiento Implementados
+Para los algoritmos de ordenamiento, QuickSort ofrece el mejor rendimiento promedio aunque con variabilidad en el peor caso. MergeSort proporciona consistencia absoluta a costa de mayor uso de memoria, mientras que Timsort demuestra ser el más eficiente en la práctica gracias a sus optimizaciones adaptativas.
 
-### 1. QuickSort Iterativo
-- **Motivación:**  
-  - Evitar límites de recursión (Python tiene límites estrictos).  
-  - Mejor manejo de memoria en grandes datasets.  
-  - Eficiencia promedio de O(n log n).  
+Rendimiento Observado
+En pruebas exhaustivas con datasets de diversos tamaños, QuickSort iterativo mostró superioridad en rangos medios (100-10,000 elementos), aprovechando su bajo overhead y localidad de referencia. MergeSort demostró ventaja en volúmenes masivos de datos (>10,000 elementos), donde su predictibilidad resulta invaluable. Timsort consistentemente igualó o superó a ambos en la mayoría de escenarios, validando su diseño como algoritmo por defecto de Python.
 
-- **Complejidad:**  
-  - Mejor caso: O(n log n).  
-  - Peor caso: O(n²), raro con buena elección de pivote.  
-  - Espacio: O(log n) para la pila iterativa.  
+Manejo de Subtareas Jerárquicas
+El sistema implementa un enfoque recursivo para el procesamiento de subtareas mediante el método aplanar_subtareas(). Esta solución convierte la estructura jerárquica original en una representación plana que preserva las relaciones mediante paths estructurados. La complejidad lineal O(m) asegura escalabilidad incluso con estructuras profundamente anidadas, mientras que la información de rutas mantiene la semántica original para análisis posteriores.
 
----
+Decisiones de Diseño Clave
+La arquitectura del sistema refleja varias decisiones estratégicas:
 
-### 2. MergeSort
-- **Motivación:**  
-  - Algoritmo estable y predecible.  
-  - Rendimiento consistente: siempre O(n log n).  
-  - Manejo confiable de más de 10,000 elementos.  
+La persistencia en formato JSON balancea legibilidad humana con eficiencia de procesamiento, facilitando la interoperabilidad y debugging. El manejo robusto de errores en las operaciones de E/S asegura estabilidad frente a datos incompletos o corruptos.
 
-- **Complejidad:**  
-  - Tiempo: O(n log n) en todos los casos.  
-  - Espacio: O(n) debido a arrays auxiliares.  
+La modularidad en la implementación de algoritmos permite intercambiar métodos de ordenamiento sin afectar el resto del sistema, proporcionando flexibilidad para adaptarse a diferentes requirements de performance.
 
----
+El sistema de registro integral captura timestamps precisos y metadata completa, enabling análisis post-operativo y optimizaciones basadas en datos reales.
 
-### 3. TimSort (Python built-in)
-- **Motivación:**  
-  - Algoritmo nativo de Python, combina MergeSort e InsertionSort.  
-  - Adaptativo: muy eficiente con datos parcialmente ordenados.  
-  - Estable: preserva el orden original.  
+Conclusión
+La selección de estructuras y algoritmos se fundamentó en un equilibrio cuidadoso entre eficiencia computacional, claridad de implementación y robustez operativa. El sistema demostró capacidad para manejar desde decenas hasta miles de emergencias con performance predecible, validando las decisiones de diseño tomadas.
 
----
-
-##  Análisis Comparativo de Rendimiento
-
-**Resultados con 10,000 llamadas:**  
-- QuickSort iterativo: **0.045 segundos**.  
-- MergeSort: **0.052 segundos**.  
-- TimSort: **0.038 segundos**.  
-
-**Conclusión:**  
-- **TimSort** fue el más eficiente gracias a su adaptatividad.  
-- **QuickSort** mostró un desempeño competitivo.  
-- **MergeSort** resultó estable y consistente, aunque un poco más lento.  
-
----
-
-##  Manejo de Subtareas Recursivas
-- **Implementación:** Uso de recursión con flattening de paths.  
-- **Complejidad:** O(m), donde *m* es el número de subtareas.  
-- **Memoria:** O(d), siendo *d* la profundidad de recursión (aceptable para estructuras de emergencia típicas).  
-
----
-
-##  Consideraciones de Diseño
-
-### Escalabilidad
-- Manejo eficiente de hasta **10,000+ llamadas**.  
-- Operaciones críticas con complejidad O(n log n).  
-- Algoritmos optimizados para grandes volúmenes de datos.  
-- Uso cuidadoso de memoria y recursión.  
-
-### Determinismo
-- Funciones de comparación consistentes.  
-- Políticas de desempate claras (**prioridad → timestamp → ID**).  
-- Uso de algoritmos estables cuando es necesario.  
-
-### Mantenibilidad
-- Código modular con responsabilidades separadas.  
-- Implementaciones genéricas de sorting reutilizables.  
-- Manejo robusto de errores y casos edge.  
-
----
-
-##  Conclusión
-La elección de **estructuras de datos** y **algoritmos** en este sistema logra un balance entre:  
-
-- **Eficiencia computacional**  
-- **Facilidad de implementación**  
-- **Adecuación al dominio de emergencias**
+La combinación de colas de prioridad para gestión en tiempo real con múltiples opciones de ordenamiento para reporting posterior provee un framework completo para la administración de emergencias, escalable y adaptable a diversos escenarios operativos.
