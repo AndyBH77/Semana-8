@@ -17,7 +17,6 @@ class Libro:
         self.metadatos = libro_data.get('metadatos', {})
 
     def __lt__(self, other):
-        # Para ordenamiento por título (usado en algunos algoritmos)
         return self.titulo < other.titulo
 
 
@@ -33,7 +32,6 @@ class Solicitud:
         self.resultado = None
 
     def __lt__(self, other):
-        # Para la cola de prioridad: prioridad más baja (número más pequeño) primero
         if self.prioridad != other.prioridad:
             return self.prioridad < other.prioridad
         elif self.timestamp != other.timestamp:
@@ -44,13 +42,12 @@ class Solicitud:
 
 class SistemaBiblioteca:
     def __init__(self):
-        self.catalogo: Dict[str, Libro] = {}  # Diccionario para acceso rápido por ID
-        self.solicitudes_heap = []  # Cola de prioridad para solicitudes
-        self.solicitudes_procesadas = []  # Solicitudes ya procesadas
-        self.libros_ordenados = []  # Catálogo ordenado
+        self.catalogo: Dict[str, Libro] = {}  
+        self.solicitudes_heap = [] 
+        self.solicitudes_procesadas = []  
+        self.libros_ordenados = [] 
 
     def cargar_catalogo(self, filename: str):
-        """Cargar catálogo de libros desde JSON"""
         try:
             with open(filename, 'r', encoding='utf-8') as file:
                 data = json.load(file)
@@ -65,13 +62,11 @@ class SistemaBiblioteca:
             print(f"Error cargando catálogo: {e}")
 
     def cargar_solicitudes(self, filename: str):
-        """Cargar solicitudes desde JSON y añadirlas a la cola de prioridad"""
         try:
             with open(filename, 'r', encoding='utf-8') as file:
                 data = json.load(file)
 
             for solicitud_data in data.get('solicitudes', []):
-                # Verificar que el libro existe en el catálogo
                 if solicitud_data['libro_id'] in self.catalogo:
                     solicitud = Solicitud(solicitud_data)
                     heapq.heappush(self.solicitudes_heap, solicitud)
@@ -85,7 +80,6 @@ class SistemaBiblioteca:
             print(f"Error cargando solicitudes: {e}")
 
     def procesar_solicitudes(self):
-        """Procesar todas las solicitudes en la cola de prioridad"""
         print("Procesando solicitudes...")
         procesadas = 0
         exitosas = 0
